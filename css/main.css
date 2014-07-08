@@ -1,0 +1,44 @@
+body {
+	font: normal 1.1em/1.5 sans-serif;
+	color: #222;
+	background-color: #edeff0;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.main-wrapper {
+	margin: auto;
+}
+.first-header {
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+.main-nav {
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	
+}
+h2 {
+display: block;
+font-size: 1.5em;
+-webkit-margin-before: 0.2em;
+-webkit-margin-after: 0.2em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font-weight: bold;
+}
+.footer-nav {
+	display: flex;
+	align-items: center:
+}
+
