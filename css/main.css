@@ -2,6 +2,7 @@ body {
 	font: normal 1.1em/1.5 sans-serif;
 	color: #222;
 	background-color: #edeff0;
+	
 }
 a {
 	text-decoration: none;
@@ -26,19 +27,30 @@ a {
 	display: flex;
 	-webkit-justify-content: space-between;
 	justify-content: space-between;
+	-webkit-padding-start: 0;
 	
 }
 h2 {
-display: block;
-font-size: 1.5em;
--webkit-margin-before: 0.2em;
--webkit-margin-after: 0.2em;
--webkit-margin-start: 0px;
--webkit-margin-end: 0px;
-font-weight: bold;
+	display: block;
+	font-size: 1.5em;
+	-webkit-margin-before: 0.2em;
+	-webkit-margin-after: 0.2em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
 }
-.footer-nav {
+.footer-nav{
+	list-style-type: none;
 	display: flex;
-	align-items: center:
+	-webkit-padding-start: 0;
+	justify-content: center;
 }
+.footer-nav:first-child{
+	margin-right: 50px;
+}
+/*.footer-nav li img{
+	width: 40px;
+	height: auto;
+}*/
+
 
