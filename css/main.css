@@ -24,10 +24,7 @@ a {
 	justify-content: center;
 }
 .main-nav {
-	display: flex;
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
-	-webkit-padding-start: 0;
+	display: inline-block;
 	
 }
 h2 {
