@@ -16,7 +16,7 @@ a {
 	text-align: center;
 	margin-top: 5%;
 }
-.first-header h1,.first-header h2{
+.first-header h1,.first-header h2{ /* have ux on the left of design*/
 	display: inline-block;
 	text-align: center;
 }
