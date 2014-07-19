@@ -1,8 +1,22 @@
+/* Here are the site fonts
+
+font-family: 'Dosis', sans-serif;
+That's for the main text
+Use bolder weights for paragraph headers and lighter weights for paragraphs
+
+font-family: 'Kaushan Script', cursive;
+That's for section headings
+I may change this font, heads up
+
+Already reference these fonts in HTML header
+
+*/
+
 body {
-	font: normal 1.1em/1.5 sans-serif;
+	/* font: normal 1.1em/1.5 sans-serif; */
+    font-family: 'Dosis', sans-serif;
 	color: #222;
-	background-color: #edeff0;
-	
+	background-color: #D8AE85;
 }
 a {
 	text-decoration: none;
@@ -25,9 +39,11 @@ a {
 	margin-top: -5px;
 	margin-bottom: 0;
 	font-size: 1.3em;
+    font-family: 'Kaushan Script', cursive;
 }
 .main-nav  li{
 	margin: 0 2%;
+    font-family: 'Kaushan Script', cursive;
 }
 section, footer a{
 	margin: 0 3%;
