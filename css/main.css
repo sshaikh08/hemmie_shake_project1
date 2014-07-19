@@ -8,45 +8,72 @@ a {
 	text-decoration: none;
 	color: black;
 }
+
 .main-wrapper {
 	margin: auto;
 }
-.first-header {
+.first-header, .first-header h1, .first-header h2, .main-nav li {
 	display: inline-block;
-	text-align: center;
-	margin-top: 5%;
 }
-.first-header h1,.first-header h2{ /* have ux on the left of design*/
-	display: inline-block;
+.first-header, .first-header h1, .first-header h2, .main-nav, footer div, footer p{
 	text-align: center;
+}	
+.first-header {
+	margin-top: 10px;
 }
 .first-header h2 {
-	margin-top: 0;
+	margin-top: -5px;
+	margin-bottom: 0;
 	font-size: 1.3em;
 }
 .main-nav  li{
-	display: inline-block;
 	margin: 0 2%;
 }
-.main-nav {
-	text-align: center;
-}
-.blog-excerpt-1, .blog-excerpt-2{
+section, footer a{
 	margin: 0 3%;
+}
+section{
 	font-size: 0.875em;
 }
-.blog-excerpt-3{
+.blog-excerpt-3, .tablet-plus{
 	display: none;
 }
-.footer-nav-1, .footer-nav-2{
+footer div{
+	display: block;
+}
+
+@media screen and (min-width: 436px){
+.first-header{
 	display: block;
 	text-align: center;
 }
-.footer-nav-1 a, .footer-nav-2 a {
-	margin: 0 3%;
+.first-header h1 {
+	display: block;
+	text-align: center;
 }
-footer p {
-	text-align:center;
+.first-header h2 {
+	
+}
+}
+@media screen and (min-width: 447px) {
+.footer-nav-2{
+	display: none;
+}
+.tablet-plus{
+	display: inline-block;
+}
+footer a{
+	margin-left: 1%;
+	margin-right: 1%;
+}
+footer {
+	margin-bottom: 0;
+	position: relative;
+	bottom: -120px;
+}
+.blog-excerpt-3 {
+	display: block;
+}
 }
 
 
