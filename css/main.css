@@ -10,6 +10,17 @@ I may change this font, heads up
 
 Already reference these fonts in HTML header
 
+Colors:
+
+#A55C26
+#D9AE86
+#3C7F55
+#742A1A
+#1DA64A
+#000000
+#EAEAEA
+
+
 */
 
 body {
@@ -57,6 +68,62 @@ section{
 footer div{
 	display: block;
 }
+hr {
+    border: 0;
+    width: 95%;
+    color: #742A1A;
+    background-color: #742A1A;
+    height: 3px;
+}
+
+.footer-nav-1 a {
+    opacity: .4;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);  
+    /* For Webkit browsers */
+    filter: gray;  
+    /* For IE 6 - 9 */
+    -webkit-transition: all .6s ease;  
+    /* Transition for Webkit browsers */  
+}
+
+.footer-nav-2 a {
+    opacity: .4;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);  
+    /* For Webkit browsers */
+    filter: gray;  
+    /* For IE 6 - 9 */
+    -webkit-transition: all .6s ease;  
+    /* Transition for Webkit browsers */  
+}
+
+.footer-nav-1 a:hover{
+    opacity: 1;
+      filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);  
+    /* For Webkit browsers */
+    filter: none;  
+    /* For IE 6 - 9 */
+    -webkit-transition: all .6s ease;  
+    /* Transition for Webkit browsers */  
+}
+
+.footer-nav-2 a:hover{
+    opacity: 1;
+      filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);  
+    /* For Webkit browsers */
+    filter: none;  
+    /* For IE 6 - 9 */
+    -webkit-transition: all .6s ease;  
+    /* Transition for Webkit browsers */ 
+}
+    
+.slideshow img {
+    margin-left: 20%;
+	margin-right: 20%;
+}
 
 @media screen and (min-width: 436px){
 .first-header{
@@ -70,7 +137,7 @@ footer div{
 .first-header h2 {
 	
 }
-}
+     
 @media screen and (min-width: 447px) {
 .footer-nav-2{
 	display: none;
@@ -90,8 +157,16 @@ footer {
 .blog-excerpt-3 {
 	display: block;
 }
-}
 
+    
+/* footer div:hover {
+	background-color: yellow;
+    opacity: 1;    
+}
+*/
+    
+    
+    
 
 
 
