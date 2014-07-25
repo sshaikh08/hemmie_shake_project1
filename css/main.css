@@ -27,24 +27,26 @@ body {
 	/* font: normal 1.1em/1.5 sans-serif; */
     font-family: 'Dosis', sans-serif;
 	color: #222;
-	background-color: #D8AE85;
+	background-color: #74b3ff;
 }
 a {
 	text-decoration: none;
 	color: black;
 }
-
 .main-wrapper {
 	margin: auto;
-}
-.main-nav li {
-	display: inline-block;
+	z-index: 1;
 }
 .first-header, .first-header h1, .first-header h2, .main-nav, footer div, footer p{
 	text-align: center;
 }	
 .first-header {
 	margin-top: 10px;
+}
+.first-header h1 {
+
+	font-size: 3em;
+	font-weight: 300;
 }
 .first-header h2 {
 	margin-top: -5px;
@@ -53,14 +55,25 @@ a {
     font-family: 'Kaushan Script', cursive;
 }
 .main-nav  li{
+	display: inline-block;
+	position: ;
 	margin: 0 2%;
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Dosis', sans-serif;/*font-family: 'Kaushan Script', cursive;*/
+	font-weight: 300;
+	-webkit-transition: all .3s ease;
+}
+.main-nav li:hover {
+	font-weight: 900;
+	-webkit-transition: all .3s ease;
 }
 section, footer a{
 	margin: 0 3%;
 }
-section{
-	font-size: 0.875em;
+section p{
+	font-size: 1.0em;
+}
+section {
+	margin-top: 210px;
 }
 .blog-excerpt-3, .tablet-plus{
 	display: none;
@@ -71,8 +84,8 @@ footer div{
 hr {
     border: 0;
     width: 95%;
-    color: #742A1A;
-    background-color: #742A1A;
+    color: #437abc;
+    background-color: #437abc;
     height: 3px;
 }
 
@@ -120,11 +133,13 @@ hr {
     /* Transition for Webkit browsers */ 
 }
     
-.slideshow img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	
+.slideshow {
+    width: 100%;
+    background-color: white;
+    height: 200px;
+    z-index: -1;
+    position: absolute;
+    top: 150px;
 }
 
 @media screen and (min-width: 436px){
@@ -138,6 +153,9 @@ hr {
 }
 .first-header h2 {
 	display: inline-block;
+}
+.main-nav  li{
+	margin: 0 7%;
 }
      
 @media screen and (min-width: 447px) {
@@ -172,10 +190,7 @@ footer {
 	margin: auto;
 	max-width: 1000px;
 }
-.first-header h1 {
-	font-size: 3em;
-	font-weight: 300;
-}
+
 .first-header h2 {
 	font-weight: 200;
 }
@@ -184,7 +199,7 @@ footer {
 	margin-right: 3.6em;
 	font-size: 1.2em;
 }
-p {
+section p {
 	font-size: 1.5em;
 }
 }
