@@ -31,11 +31,15 @@ body {
 }
 a {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 .main-wrapper {
 	margin: auto;
 	z-index: 1;
+}
+.main-header{
+	background-color: #437abc;
+	border-radius: 10px;
 }
 .first-header, .first-header h1, .first-header h2, .main-nav, footer div, footer p{
 	text-align: center;
@@ -45,7 +49,7 @@ a {
 }
 .first-header h1 {
 
-	font-size: 3em;
+	font-size: 3.5em;
 	font-weight: 300;
 }
 .first-header h2 {
@@ -54,9 +58,12 @@ a {
 	font-size: 1.3em;
     font-family: 'Kaushan Script', cursive;
 }
+.main-nav {
+	background-color: #437abc;
+	
+}
 .main-nav  li{
 	display: inline-block;
-	position: ;
 	margin: 0 2%;
     font-family: 'Dosis', sans-serif;/*font-family: 'Kaushan Script', cursive;*/
 	font-weight: 300;
@@ -72,8 +79,8 @@ section, footer a{
 section p{
 	font-size: 1.0em;
 }
-section {
-	margin-top: 210px;
+.slideshow{
+	display: none;
 }
 .blog-excerpt-3, .tablet-plus{
 	display: none;
@@ -83,7 +90,7 @@ footer div{
 }
 hr {
     border: 0;
-    width: 95%;
+    width: 94%;
     color: #437abc;
     background-color: #437abc;
     height: 3px;
@@ -133,14 +140,6 @@ hr {
     /* Transition for Webkit browsers */ 
 }
     
-.slideshow {
-    width: 100%;
-    background-color: white;
-    height: 200px;
-    z-index: -1;
-    position: absolute;
-    top: 150px;
-}
 
 @media screen and (min-width: 436px){
 .first-header{
@@ -186,21 +185,53 @@ footer {
 */
 @media screen and (min-width: 1000px) {
 .main-wrapper{
-	width: 75%;
+	position: relative;
+	width: 80%;
 	margin: auto;
-	max-width: 1000px;
+	max-width: 1300px;
+	z-index: 1;
 }
-
+.main-header {
+	width: 60%;
+}
+.first-header {
+	text-align: left;
+}
+.first-header h1{
+	text-align: left;
+	font-size: 4.0em;
+}
 .first-header h2 {
+
 	font-weight: 200;
 }
+.main-nav {
+	text-align: left;
+	width: 80%;
+}
 .main-nav li {
-	margin-left: 3.6em;
-	margin-right: 3.6em;
-	font-size: 1.2em;
+	text-align: left;
+	margin-left: .6em;
+	margin-right: .6em;
+	font-size: 1.8em;
 }
 section p {
 	font-size: 1.5em;
+}
+.slideshow  {
+	display: inline-block;
+	position: absolute;
+	z-index: -1;
+	text-align: center;
+	border-radius: 10px;
+}
+.slideshow img {
+	border-radius: 10px;
+	width: 80%;
+	height: auto;
+}
+section {
+	margin-top: 800px;
 }
 }
     
