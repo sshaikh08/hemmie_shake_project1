@@ -34,12 +34,12 @@ a {
 	color: white;
 }
 .main-wrapper {
+	position: absolute;
 	margin: auto;
 	z-index: 1;
 }
 .main-header{
 	background-color: #437abc;
-	border-radius: 10px;
 }
 .first-header, .first-header h1, .first-header h2, .main-nav, footer div, footer p{
 	text-align: center;
@@ -80,8 +80,17 @@ section p{
 	font-size: 1.0em;
 }
 .slideshow{
-	display: none;
+	display: block;
+	position: relative;
+	top: -10px;
+	overflow: hidden;
 }
+.slideshow img {
+	position: relative;
+	width: 142%;
+	height: auto;
+}
+
 .blog-excerpt-3, .tablet-plus{
 	display: none;
 }
