@@ -39,9 +39,9 @@ a {
 	z-index: 1;
 }
 .main-header{
-	background-color: #437abc;
+	background-color: #FF0000;
 }
-.first-header, .first-header h1, .first-header h2, .main-nav, footer div, footer p{
+.first-header, .first-header h1, .main-nav, footer div, footer p{
 	text-align: center;
 }	
 .first-header {
@@ -52,14 +52,10 @@ a {
 	font-size: 3.5em;
 	font-weight: 300;
 }
-.first-header h2 {
-	margin-top: -5px;
-	margin-bottom: 0;
-	font-size: 1.3em;
-    font-family: 'Kaushan Script', cursive;
-}
 .main-nav {
-	background-color: #437abc;
+	background-color: #FF0000;
+	height: 35px;
+	border-bottom: solid #000;
 	
 }
 .main-nav  li{
@@ -77,12 +73,11 @@ section, footer a{
 	margin: 0 3%;
 }
 section p{
-	font-size: 1.0em;
+	font-size: 1.0em;	
 }
 .slideshow{
 	display: block;
 	position: relative;
-	top: -10px;
 	overflow: hidden;
 }
 .slideshow img {
@@ -90,7 +85,12 @@ section p{
 	width: 142%;
 	height: auto;
 }
-
+.float-text {
+	position: absolute;
+	z-index: 2;
+	font-size: 2em;
+	top: 100px;
+}
 .blog-excerpt-3, .tablet-plus{
 	display: none;
 }
@@ -148,9 +148,13 @@ hr {
     -webkit-transition: all .6s ease;  
     /* Transition for Webkit browsers */ 
 }
-    
-
 @media screen and (min-width: 436px){
+.main-header{
+	position: relative;
+	top: -10px;
+	margin-bottom: -18%;
+	z-index: 2;
+}
 .first-header{
 	display: block;
 	text-align: center;
@@ -159,11 +163,12 @@ hr {
 	display: block;
 	text-align: center;
 }
-.first-header h2 {
-	display: inline-block;
-}
 .main-nav  li{
 	margin: 0 7%;
+}
+.slideshow{
+	position: relative;
+	z-index: -1;
 }
      
 @media screen and (min-width: 447px) {
@@ -185,13 +190,7 @@ footer {
 .blog-excerpt-3 {
 	display: block;
 }
-}
-    
-/* footer div:hover {
-	background-color: yellow;
-    opacity: 1;    
-}
-*/
+
 @media screen and (min-width: 1000px) {
 .main-wrapper{
 	position: relative;
@@ -202,6 +201,7 @@ footer {
 }
 .main-header {
 	width: 60%;
+	border: solid #000;
 }
 .first-header {
 	text-align: left;
@@ -210,20 +210,17 @@ footer {
 	text-align: left;
 	font-size: 4.0em;
 }
-.first-header h2 {
-
-	font-weight: 200;
-}
 .main-nav {
 	text-align: left;
-	width: 80%;
+	width: 70%;
+	border-bottom: none;
 }
 .main-nav li {
 	text-align: left;
 	margin-left: .6em;
 	margin-right: .6em;
 	font-size: 1.8em;
-}
+	padding: 0 .2em;
 section p {
 	font-size: 1.5em;
 }
@@ -234,11 +231,11 @@ section p {
 	text-align: center;
 	border-radius: 10px;
 }
-.slideshow img {
-	border-radius: 10px;
-	width: 80%;
+.slideshow img{
+	width: 100%;
 	height: auto;
 }
+
 section {
 	margin-top: 800px;
 }
