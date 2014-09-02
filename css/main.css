@@ -75,8 +75,19 @@ section{
 	margin-bottom: 10px;
 }
 section p{
-	font-size: 1.0em;
+	font-size: 1.2em;
 	margin: 0 3%;
+}
+.p2, .p3 {
+margin-top: 30px;
+}
+section h1{
+	background-color: #c7494a;
+	width: 200px;
+	border-bottom: solid #000;
+	border-right: solid #000;
+	border-top: solid #000;
+	text-align: center;
 }
 .slideshow{
 	display: block;
@@ -236,12 +247,18 @@ box-shadow: 0 0 30px rgba(0,0,0,1);}
 .blog-excerpt-1 {
 	margin-top: 10px;
 }
+section {
+	margin-left: 10px;
+}
+section h1 {
+	border-left: solid #000;
+}
 section p {
 	font-size: 1.2em;
 	margin-top: 5px;
 }
-.p1, .p2 {
-	margin: 20px 10px;
+.p2, .p3 {
+	margin-top: 20px;
 }
 .slideshow  {
 	display: inline-block;
